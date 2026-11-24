@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GemUp</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>💎 GEMUP</h1>
+    <span>YOUR NFT WORLD</span>
+</header>
+
+<div class="balance">
+    <small>ТВОЙ БАЛАНС</small>
+    <h2>💎 <span id="balance">500</span></h2>
+</div>
+
+<nav>
+    <button onclick="showPage('home')">Главная</button>
+    <button onclick="showPage('cases')">Кейсы</button>
+    <button onclick="showPage('inventory')">Инвентарь</button>
+    <button onclick="showPage('profile')">Профиль</button>
+</nav>
+
+<main id="content">
+    <h2>Добро пожаловать в GemUp!</h2>
+    <p>Открывай кейсы и собирай редкие предметы.</p>
+    <button class="main-button" onclick="showPage('cases')">
+        ОТКРЫТЬ КЕЙСЫ
+    </button>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
