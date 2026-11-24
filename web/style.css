@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #100707;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ff3030;
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px #ff0000;
+}
+
+header span {
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.balance {
+    background: linear-gradient(135deg, #8b0000, #e51b23);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 0 25px #70000066;
+}
+
+.balance small {
+    color: #ffdada;
+}
+
+.balance h2 {
+    font-size: 34px;
+    margin: 10px 0 0;
+}
+
+nav {
+    display: flex;
+    gap: 7px;
+    overflow-x: auto;
+    margin-bottom: 25px;
+}
+
+nav button {
+    flex: 1;
+    padding: 12px 8px;
+    border: 1px solid #5b1717;
+    border-radius: 12px;
+    background: #251010;
+    color: white;
+    font-size: 12px;
+}
+
+main {
+    background: #1b1010;
+    border: 1px solid #4a1717;
+    padding: 22px;
+    border-radius: 20px;
+    min-height: 220px;
+}
+
+main h2 {
+    color: #ff4545;
+}
+
+main p {
+    color: #aaa;
+    line-height: 1.5;
+}
+
+.main-button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 13px;
+    background: linear-gradient(90deg, #b30000, #ff3030);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.97);
+}
