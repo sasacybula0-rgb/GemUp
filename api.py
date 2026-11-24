@@ -8,6 +8,7 @@ import random
 from urllib.parse import parse_qsl
 
 from fastapi import FastAPI, HTTPException, Header
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
@@ -252,3 +253,4 @@ def history(authorization: str = Header(None)):
 @app.get("/api/cases")
 def cases():
     return CASES
+app.mount("/", StaticFiles(directory="web", html=True), name="web")
